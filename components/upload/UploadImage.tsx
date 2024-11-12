@@ -14,11 +14,11 @@ const UploadImage = () => {
       "image/webp": [".webp"],
       "image/jpeg": [".jpeg"],
     },
-    onDrop: async (acceptedFiles, fileRegections) => {
+    onDrop: async (acceptedFiles) => {
       if (acceptedFiles.length) {
         const formData = new FormData();
         formData.append("image", acceptedFiles[0]);
-        const objectUrl = URL.createObjectURL(acceptedFiles[0]);
+        // const objectUrl = URL.createObjectURL(acceptedFiles[0]);
         const res = await uploadImage({ image: formData });
         console.log({ res });
       }
