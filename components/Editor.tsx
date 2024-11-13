@@ -1,5 +1,6 @@
 "use client";
 
+import LayerImage from "./layers/layer-image";
 import UploadImage from "./upload/UploadImage";
 
 const Editor = () => {
@@ -7,6 +8,7 @@ const Editor = () => {
     <>
       <h1>Editor</h1>
       <UploadImage />
+      <LayerImage />
     </>
   );
 };

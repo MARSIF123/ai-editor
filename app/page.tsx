@@ -3,6 +3,10 @@ import { ImageStore } from "@/lib/image-store";
 import { LayerStore } from "@/lib/layers-store";
 
 export default function Home() {
+  console.log({ Editor });
+  console.log({ ImageStore });
+  console.log({ LayerStore });
+
   return (
     <ImageStore.Provider
       initialValue={{

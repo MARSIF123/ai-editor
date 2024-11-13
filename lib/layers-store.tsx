@@ -127,5 +127,6 @@ export function useLayerStore<T>(selector: (state: State) => T) {
   if (!store) {
     throw new Error("Missing LayerStore provider");
   }
+  console.log({ LayerStore });
   return useStore(store, selector);
 }
