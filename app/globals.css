@@ -7,6 +7,12 @@ body {
 }
 
 @layer base {
+  html {
+    height: 100%;
+  }
+  body {
+    min-height: 100%;
+  }
   :root {
     --background: 0 0% 100%;
     --foreground: 0 0% 3.9%;
